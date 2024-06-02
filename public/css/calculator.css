@@ -1,0 +1,77 @@
+.hidden{
+    display: none;
+}
+#partyMemberSelection{
+    border: 1px solid black;
+}
+.itemContainer{
+    border: 1px solid black;
+    margin-bottom: -1px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+}
+input{
+    width: 50%;
+    margin:5px;
+    font-size: 24px;
+    text-align: center;
+}
+.labeledInp{
+    width:30%;
+}
+button{
+    margin: 5px;
+    padding: 2px 5px;
+    font-size: 18px;
+}
+h2{
+    margin-bottom: 0;
+}
+label{
+    font-size: 20px;
+}
+.errMsg{
+    font-size: 18px;
+    color: red;
+}
+
+.checkboxContainer{
+    width: 40%;
+    margin:auto;
+    text-align: left;
+}
+.inlineParagraph{
+    display:inline-block;
+    padding: 0% 3%;
+    margin:1%;
+}
+.ulContainer{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 2%;
+}
+.itemContainer{
+    font-size:18px;
+    width:90%;
+    margin:auto;
+}
+.itemContainer>button{
+    margin-bottom:2%;
+}
+.billResultTotal{
+    padding:0;
+    margin:0;
+    font-size:24px;
+    padding-top:1%;
+}
+.billResultDetail{
+    color:gray;
+    padding:0;
+    margin:0;
+    font-size:12px;
+}

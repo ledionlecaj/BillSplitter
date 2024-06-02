@@ -1,0 +1,20 @@
+#loginForm{
+    border: 1px solid black;
+    width: 40%;
+    max-width: 500px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+#username{
+    width: 90%;
+}
+#password{
+    width: 90%;
+}
+#login{
+    padding:2px 15px;
+    margin:5px;
+    display: inline-block;
+}

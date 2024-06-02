@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bill Splitter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="/css/calculator.css">
+</head>
+
+<body>
+    <script src="/js/calc.js"></script>
+
+    <div id="billDescriptionContainer" class="container">
+        <h2> Label the Bill</h2>
+        <input type="text" id="billName"><br>
+        <button id="submitName">Next</button>
+        <p id="billNameError" class="errMsg"></p>
+    </div>
+    <div id="partySizeContainer" class="hidden container">
+        <h2>Enter Party Size</h2>
+        <input type="number" id="partySize"><br>
+        <button id="backToName">Back</button>
+        <button id="submitPartySize">Next</button>
+        <p id="partySizeError" class="errMsg"></p>
+    </div>
+    <div id="partyNamesContainer" class="hidden container">
+        <h2>Enter Names of Party</h2>
+    </div>
+    <div id="itemListContainer" class="hidden container">
+        <h2>Item List</h2>
+        <div>
+            <div id="currentItems">
+
+            </div>
+            <br>
+            <button id="addItem">+ Add Item</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <label for="tax">Tax: $</label>
+            <input type="number" id="tax" name="tax" step="0.01" min="0" class="labeledInp"><br>
+            <label for="tip">Tip (%): </label>
+            <input type="number" id="tip" name="tip" min="0" class="labeledInp"><br>
+            <br>
+            <button id="calculate"> Calculate</button>
+            <p id="calculateError" class="errMsg"></p>
+        </div>
+    </div>
+    <div id="addItemContainer" class="hidden container">
+        <h2>Add an Item</h2>
+        <br>
+        <label for="addItemName">Name: </label>
+        <input type="text" id="addItemName" name="addItemName" class="labeledInp"><br>
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="addItemQuantity" name="quantity" min="0" class="labeledInp"><br>
+        <label for="unitPrice">Unit Price: $: </label>
+        <input type="number" id="addItemPrice" name="unitPrice" step="0.01" class="labeledInp">
+        <br>
+        <br>
+        <div>
+            <h3>Item Shared By:</h3>
+            <div id="partyMemberSelection">
+            </div>
+        </div>
+
+        <br>
+        <button id="cancelAddItem"> Cancel</button>
+        <button id="submitItem"> Add </button><br>
+        <p id="addItemError" class="errMsg"></p>
+    </div>
+    <div id="resultsContainer" class="hidden container">
+        <h2>Bill Breakdown</h2>
+        <div id="partyMemberCosts">
+
+        </div>
+        <button id="backToAddItem">Back</button>
+        <button id="saveReceipt">Save</button>
+        <form method="GET" action="/dashboard" class="hidden">
+            <input type="submit" id="dashboardRedirect">
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+
+<h1>{{this.fname}} {{this.lname}}</h1>
+<hr>
+<a href="/calculator.html">
+    <h2 style="display:inline;">Calculator</h2>
+</a>
+<a href="/dashboard">
+    <h2 style="display:inline;">My Receipts</h2>
+</a>
+<a href="/logout">
+    <h2 style="display:inline;">Log Out</h2>
+</a>
+<br>
+{{#each this}}
+{{#each receipts}}
+<div>
+    <h1>{{this.name}}</h1>
+    <h3>{{this.party}}</h3>
+    {{#each foodItems}}
+    <div>
+        <p>Name:{{name}} Quantity: {{quantity}}x Unit Price: ${{unitPrice}}</p>
+        <p>Shared Between: {{partyMembers}}</p>
+    </div>
+    {{/each}}
+    <p>Tax: ${{tax}}</p>
+    <p>Tip: {{tip}}%</p>
+
+</div>
+{{/each}}
+{{/each}}

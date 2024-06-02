@@ -1,0 +1,26 @@
+<h1>Bill Splitter</h1>
+<br>
+{{#if loggedIn}}
+<a href="/logout" class="index">
+    <h2 style="display:inline;">Log Out</h2>
+</a>
+<br>
+<br>
+<a href="/calculator.html" class="index">
+    <h2 style="display:inline;">Split New Bill</h2>
+</a>
+{{else}}
+<a href="/login" class="index">
+    <h2 style="display:inline;">Log In</h2>
+</a>
+<br>
+<br>
+<a href="/register" class="index">
+    <h2 style="display:inline;">Register</h2>
+</a>
+<br>
+<br>
+<a href="/calculator.html" class="index">
+    <h2 style="display:inline;">Split New Bill</h2>
+</a>
+{{/if}}

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+
+body{
+    margin-top: 5%;
+    text-align: center;
+}
+.index{
+    border: 1px solid darkblue;
+    text-decoration: none;
+    padding:10px;
+    margin: 0px 10px;
+}
+.index:link {
+    color: darkblue;
+  }
+  
+.index:visited {
+    color: darkblue;
+  }
+  
+.index:hover {
+    color: darkblue;
+  }
+  
+.index:active {
+    color: darkblue;
+  }

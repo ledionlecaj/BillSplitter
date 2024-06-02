@@ -1,0 +1,25 @@
+<form method='POST' action='' id='registerForm'>
+    <h1>Create Account</h1>
+    <div>
+        <input type='text' id='fname' placeholder='First name' name='fname' required value="{{fname}}">
+        <input type='text' id='lname' placeholder='Last name' name='lname' required value="{{lname}}">
+    </div>
+    <div>
+        <input type='email' id='email' placeholder='Email address' name='email' required value="{{email}}">
+    </div>
+    <div>
+        <input type='text' id='usernameR' placeholder='Username' name='username' required value="{{username}}">
+    </div>
+    <div>
+        <input type='password' id='password1' placeholder='Password' name='password1' required>
+        <input type='password' id='password2' placeholder='Confirm' name='password2' required>
+    </div>
+    <input type="submit" id="submit" value="Register"><br>
+    <a href='/login'>Already have an account?</a>
+
+    <div id="errors">
+        {{#each errors}}
+        <p>{{this.msg}}</p>
+        {{/each}}
+    </div>
+</form>

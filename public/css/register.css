@@ -1,0 +1,44 @@
+#registerForm{
+    border: 1px solid black;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10%;
+}
+form > div{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input{
+    font-size: 24px;
+}
+#fname{
+    width: 45%;
+}
+#lname{
+    width: 45%;
+}
+#email{
+    width: 90.5%;
+}
+#usernameR{
+    width: 90.5%;
+}
+#password1{
+    width: 45%;
+}
+#password2{
+    width: 45%;
+}
+#submit{
+    padding:2px 15px;
+    margin:5px;
+    display: inline-block;
+}
+#errors{
+    color: red;
+}
